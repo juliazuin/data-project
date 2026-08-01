@@ -8,7 +8,7 @@ def extract_data_invoices_from_csv():
     # carregar todos csv de faturas
     dfs = []
 
-    joined_path = os.path.join(current_dir, "invoice")
+    joined_path = os.path.join(current_dir, "invoices")
     for folders in os.listdir(joined_path):
         if folders != ".DS_Store":
             for file in os.listdir(joined_path + f"/{folders}"):
